@@ -1,0 +1,26 @@
+# Ghi chú cá nhân — 03063 - Phạm Tiến Phát
+
+## 1. Pha 1: ba ca khó tôi tìm ra trong 40 ảnh
+| Ảnh | v0 không trả lời được gì | Quyết định ban đầu của tôi |
+|---|---|---|
+| img_004, img_035 | Tuk-tuk / auto-rickshaw không thuộc lớp nào của v0 (không phải `car`, không hẳn `motorcycle`) | Thêm lớp `three_wheeler`; box không gồm hàng chồng trên nóc (`img_035`) |
+| img_002 | Xe chở xe: gán 1 box hay cả các ô tô trên giàn? | 1 box `truck` (cabin + giàn) và mỗi ô tô thật trên giàn một box `car` |
+| img_017, img_027, img_033, img_038 | v0 bảo "gán mọi người và phương tiện" nhưng không nói tượng, bia mộ hình xe, ma-nơ-canh, đồ chơi | Vật không thật thì không gán; ảnh để trống |
+
+Ngoài ra: pickup thuộc `car` hay `truck` (`img_001`, `img_012`, `img_028`, `img_037`), và mức `occluded_level = 3` "không rõ" của v0 không đo được. Tôi đổi thang che thành phần trăm diện tích.
+
+## 2. Pha 2: chỗ tôi bất đồng với nhóm
+- *(điền sau buổi họp Pha 2)*
+
+## 3. Pha 3: ảnh tôi đã gán
+- Số ảnh được giao: 40. Số box đã vẽ: … Số lần tôi tick `can_review`: …
+- Ca tôi lưỡng lự nhất khi gán (ảnh, vì sao): …
+
+## 4. Pha 4–5: tôi lệch ở đâu
+- *(điền sau khi chạy `qc_compare.py` và họp calibration)*
+
+## 5. Dùng AI
+- *(điền cuối bài: công cụ, dùng cho việc gì, kiểm tra lại thế nào)*
+
+## 6. Bài học
+- *(điền cuối bài)*
