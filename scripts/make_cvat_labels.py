@@ -29,7 +29,10 @@ def main() -> None:
                     "mutable": False,
                     "input_type": a["type"],
                     "default_value": str(a.get("default", "")),
-                    "values": [str(v) for v in a.get("values", [])] if a["type"] == "select" else [],
+                    # CVAT bắt buộc checkbox có values khác rỗng (["false"]), nếu để [] sẽ báo lỗi
+                    # "attribute values must be a non-empty array".
+                    "values": [str(v) for v in a.get("values", [])] if a["type"] == "select"
+                    else [str(a.get("default", "false")).lower()],
                 })
         labels.append({"name": name, "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
                        "attributes": attrs})
