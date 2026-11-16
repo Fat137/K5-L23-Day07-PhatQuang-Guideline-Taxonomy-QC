@@ -2,8 +2,8 @@
 
 - Phiên bản: **v1.0** (dùng để gán nhãn Pha 3; không đổi tới hết Pha 3)
 - Ngày: 2026-11-16
-- Người viết / duyệt: 03063 - Phạm Tiến Phát, 03200 - Nguyễn Văn Quang
-- Nguồn: gộp `individual/guideline_03063_PhamTienPhat.md` và `individual/guideline_03200_NguyenVanQuang.md`
+- Người viết / duyệt: thành viên 063, thành viên 200
+- Nguồn: gộp `individual/guideline_063.md` và `individual/guideline_200.md`
 - Taxonomy đi kèm: `submission/taxonomy.json` version `v1.0`
 - Loại nhãn: bounding box, CVAT, xuất COCO 1.0; lô `day07-street-40`
 
@@ -103,9 +103,9 @@ Phép thử lớp / thuộc tính: *"Mô hình có phải đoán ra điều này
 
 ### 4.1 Các chỗ hai bản cá nhân khác nhau và quyết định chốt
 
-| # | Vấn đề | 03063 (Phát) | 03200 (Quang) | **Chốt v1.0** | Lý do |
+| # | Vấn đề | Bản 063 | Bản 200 | **Chốt v1.0** | Lý do |
 |---|---|---|---|---|---|
-| D1 | Pickup thùng hở (`img_012`, `img_016`, `img_028`) | `truck` | `car` (chỉ pickup gắn thùng kín là `truck`) | **`truck` cho mọi pickup** | Một phép thử duy nhất "cabin tách thùng?", không phải đoán thùng cao hay thấp. Bản Quang làm `img_007` / `img_037` thành ca biên khó đồng thuận |
+| D1 | Pickup thùng hở (`img_012`, `img_016`, `img_028`) | `truck` | `car` (chỉ pickup gắn thùng kín là `truck`) | **`truck` cho mọi pickup** | Một phép thử duy nhất "cabin tách thùng?", không phải đoán thùng cao hay thấp. Bản 200 làm `img_007` / `img_037` thành ca biên khó đồng thuận |
 | D2 | Xe 3 bánh | `three_wheeler` (có động cơ); xích lô là `bicycle` | `tricycle` gồm cả tuk-tuk lẫn xích lô | **`tricycle`, đếm bánh** | Đếm bánh nhìn là thấy; phân biệt có / không động cơ trên ảnh khó hơn (xích lô máy, xe ba gác) |
 | D3 | Tài xế trong tuk-tuk (`img_004`, `img_035`) | gán | không gán (xe có mái) | **gán** | Tiêu chí chung "thân người lộ ra, không bị kính / vách ngăn"; người là ưu tiên 1 của mục tiêu |
 | D4 | Tài xế xe mui trần `img_019` | không gán | gán | **gán** | Cùng tiêu chí D3 |
@@ -168,7 +168,7 @@ Phép thử lớp / thuộc tính: *"Mô hình có phải đoán ra điều này
 | Phiên bản | Thay đổi | Lý do (ca nào) |
 |---|---|---|
 | v0 | Bản khởi đầu của giảng viên (6 lớp, thuộc tính không có ngưỡng) | — |
-| v0.1-03063, v0.1-03200 | Hai bản cá nhân | Pha 1 |
+| v0.1-063, v0.1-200 | Hai bản cá nhân | Pha 1 |
 | **v1.0** | Thêm lớp `bus`, `bicycle`, `tricycle` (9 lớp) | `img_004`, `img_009`, `img_023`, `img_029`, `img_035` |
 | | Mọi pickup là `truck` | D1: `img_012`, `img_016`, `img_028`, `img_037` |
 | | `occluded_level` theo 25 / 50 / 75 %; `truncated` theo mép ảnh | D6, D7 |

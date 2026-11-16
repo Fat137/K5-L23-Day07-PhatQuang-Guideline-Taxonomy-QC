@@ -49,8 +49,7 @@
         "2",
         "3"
       ],
-      "default": "0",
-      "description": "% diện tích phần trong khung bị vật khác che: 0 <25%, 1 25-<50%, 2 50-<75%, 3 >=75%"
+      "default": "0"
     },
     {
       "name": "truncated",
@@ -59,15 +58,13 @@
         "no",
         "yes"
       ],
-      "default": "no",
-      "description": "yes khi box cách mép ảnh <= 3 px và vật còn phần ngoài khung"
+      "default": "no"
     },
     {
       "name": "can_review",
       "type": "checkbox",
       "values": [],
-      "default": "false",
-      "description": "Không chắc lớp / chưa có quy tắc / không chắc vật thật"
+      "default": "false"
     }
   ],
   "rules": {

@@ -1,8 +1,8 @@
-# Guideline gán nhãn — v0.1 (bản cá nhân) — 03200 - Nguyễn Văn Quang
+# Guideline gán nhãn — v0.1 (bản cá nhân) — thành viên 200
 
-- Phiên bản: v0.1-03200 (sửa từ v0, trước họp nhóm)
+- Phiên bản: v0.1-200 (sửa từ v0, trước họp nhóm)
 - Ngày: 2026-11-16
-- Người viết: 03200 - Nguyễn Văn Quang
+- Người viết: thành viên 200
 - Loại nhãn: bounding box, CVAT, xuất COCO 1.0; lô `day07-street-40`
 
 > Chỗ ghi **(chưa chốt, cần họp)** là chỗ tôi chưa chắc.
@@ -109,7 +109,7 @@ Tôi chọn mốc 25 / 50 / 75 vì dễ ước bằng mắt ("che một phần t
 | Phiên bản | Thay đổi | Lý do |
 |---|---|---|
 | v0 | Bản khởi đầu | — |
-| v0.1-03200 | Thêm `bus`, `bicycle`, `tricycle` | `img_004`, `img_009`, `img_023`, `img_035` |
+| v0.1-200 | Thêm `bus`, `bicycle`, `tricycle` | `img_004`, `img_009`, `img_023`, `img_035` |
 | | Pickup thùng hở là `car`; pickup gắn thùng kín là `truck` | `img_007`, `img_012`, `img_028`, `img_037` |
 | | `occluded_level` theo phần tư (25 / 50 / 75 %); `truncated` khi ≥ 10 % ra ngoài khung | v0 không có ngưỡng |
 | | Không gán vật không thật, phản chiếu, xe chủ; người dưới mái xe không gán | `img_004`, `img_017`, `img_020`, `img_033` |

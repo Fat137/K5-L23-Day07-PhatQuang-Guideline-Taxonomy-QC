@@ -1,8 +1,8 @@
-# Guideline gán nhãn — v0.1 (bản cá nhân) — 03063 - Phạm Tiến Phát
+# Guideline gán nhãn — v0.1 (bản cá nhân) — thành viên 063
 
-- Phiên bản: v0.1-03063 (viết lại từ v0, trước họp nhóm)
+- Phiên bản: v0.1-063 (viết lại từ v0, trước họp nhóm)
 - Ngày: 2026-11-16
-- Người viết: 03063 - Phạm Tiến Phát
+- Người viết: thành viên 063
 - Loại nhãn: bounding box trên ảnh đường phố, công cụ CVAT, xuất COCO 1.0
 - Phạm vi: lô `day07-street-40` (`img_001` … `img_040`)
 
@@ -146,7 +146,7 @@ Ví dụ `yes`: xe đỏ bên trái và SUV bạc bên phải `img_015`; ngườ
 | Phiên bản | Thay đổi | Lý do (ca nào) |
 |---|---|---|
 | v0 | Bản khởi đầu của giảng viên | — |
-| v0.1-03063 | Thêm lớp `bus`, `three_wheeler`, `bicycle`; pickup và xe tải mini xếp vào `truck` | `img_004`, `img_009`, `img_016`, `img_023`, `img_029`, `img_035`, `img_036`, `img_037` |
+| v0.1-063 | Thêm lớp `bus`, `three_wheeler`, `bicycle`; pickup và xe tải mini xếp vào `truck` | `img_004`, `img_009`, `img_016`, `img_023`, `img_029`, `img_035`, `img_036`, `img_037` |
 | | Định nghĩa `occluded_level` bằng % diện tích bị che (0 / <10, 1 / 10–40, 2 / 40–70, 3 / ≥70); tách khỏi `truncated` | Mức 3 "không rõ" của v0 không đo được |
 | | Quy tắc không gán vật không thật, phản chiếu, xe chủ | `img_017`, `img_020`, `img_027`, `img_033`, `img_038` |
 | | Quy tắc người–xe: 2 box riêng; không gán người trong xe kín | `img_005`, `img_009`, `img_019`, `img_026` |
