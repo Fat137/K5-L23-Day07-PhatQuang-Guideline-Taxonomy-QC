@@ -34,7 +34,9 @@ def main() -> None:
                     "values": [str(v) for v in a.get("values", [])] if a["type"] == "select"
                     else [str(a.get("default", "false")).lower()],
                 })
-        labels.append({"name": name, "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
+        # CVAT bản mới bắt buộc trường "type" cho mỗi nhãn (nếu thiếu: 'unknown label type "undefined"').
+        labels.append({"name": name, "type": "rectangle",
+                       "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
                        "attributes": attrs})
     text = json.dumps(labels, ensure_ascii=False, indent=2)
     out = ROOT / "cvat" / "labels_generated.json"
