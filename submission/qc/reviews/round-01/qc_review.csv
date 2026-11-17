@@ -1,0 +1,10 @@
+﻿image,object_id,error_type,reviewer,rule_id,region,note
+img_001.jpg,,khong,063,,,
+img_002.jpg,15,sai_vi_tri_kich_thuoc,063,R-10,,"Box truck dừng ở x≈901, đuôi rơ-moóc (khung cam, cột và cờ đỏ) kéo tới x≈920: hụt ~19 px. Do nháp đồng thuận lấy trung bình 2 box (918 và 882), chưa chỉnh khi sửa"
+img_004.jpg,,khong,063,,,
+img_016.jpg,25,sai_thuoc_tinh,063,R-14,,"Người phụ nữ áo đỏ ở tiền cảnh không bị vật nào che, chỉ bị mép phải/dưới cắt (truncated=yes đúng) → occluded_level phải 0, đang 2"
+img_016.jpg,29,sai_thuoc_tinh,063,R-21,,"Người ngồi trong tuk-tuk xanh: thấy từ đùi trở lên, phần dưới bị thân xe che → occluded_level phải 2, đang 1"
+img_017.jpg,,khong,063,,,
+img_026.jpg,35,sai_thuoc_tinh,063,R-21,,"Người lái phía trước bị người ngồi sau che phần lớn thân và chân phải, chỉ thấy mũ, tay trái, chân trái → occluded_level phải 2, đang 0"
+img_028.jpg,,khong,063,,,
+img_033.jpg,,khong,063,,,

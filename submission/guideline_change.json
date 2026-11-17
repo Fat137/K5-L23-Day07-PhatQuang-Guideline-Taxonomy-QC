@@ -1,0 +1,1 @@
+{"kind": "semantic", "summary": "v1.1 thêm R-21 (thang occluded_level cho người bị bàn/ghế/xe che: mốc theo phần thân nhìn thấy), R-22 (khung thưa như giàn xe chở xe, song rào: tính theo diện tích thanh che, tối đa mức 1 nếu chỉ có thanh thưa), R-23 (hàng/xe chở trên xe không tính là che xe chở). R-21 đổi cách chọn thuộc tính nên rà lại cả lô (C002 phạm vi lo)."}

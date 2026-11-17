@@ -1,0 +1,18 @@
+case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
+C001,img_001.jpg,sai_thuoc_tinh,063|200,person,person,"[231,199,156,441]","[234,200,153,440]",0.97,truncated: 063=yes vs 200=no
+C002,img_001.jpg,sai_thuoc_tinh,063|200,person,person,"[526,114,117,191]","[526,115,120,190]",0.97,occluded_level: 063=1 vs 200=0
+C003,img_001.jpg,sai_thuoc_tinh,063|200,person,person,"[395,113,134,198]","[397,114,135,197]",0.96,occluded_level: 063=1 vs 200=0
+C004,img_001.jpg,sai_thuoc_tinh,063|200,person,person,"[82,105,127,326]","[82,95,130,341]",0.94,occluded_level: 063=3 vs 200=2
+C005,img_001.jpg,sai_thuoc_tinh,063|200,person,person,"[323,128,100,189]","[323,130,105,175]",0.88,occluded_level: 063=2 vs 200=1
+C006,img_001.jpg,sai_thuoc_tinh,063|200,person,person,"[127,113,102,291]","[119,110,113,299]",0.88,occluded_level: 063=3 vs 200=0
+C007,img_002.jpg,sai_thuoc_tinh,063|200,car,car,"[614,120,123,101]","[614,121,123,100]",0.99,occluded_level: 063=2 vs 200=1
+C008,img_002.jpg,sai_thuoc_tinh,063|200,car,car,"[714,148,113,100]","[715,149,111,99]",0.98,occluded_level: 063=2 vs 200=0
+C009,img_002.jpg,sai_thuoc_tinh,063|200,car,car,"[818,173,74,91]","[817,173,75,91]",0.97,occluded_level: 063=2 vs 200=0
+C010,img_002.jpg,sai_thuoc_tinh,063|200,car,car,"[477,88,156,130]","[479,88,153,131]",0.96,occluded_level: 063=2 vs 200=1
+C011,img_002.jpg,sai_thuoc_tinh,063|200,car,car,"[724,271,95,119]","[721,272,96,120]",0.95,occluded_level: 063=2 vs 200=1
+C012,img_002.jpg,sai_thuoc_tinh,063|200,car,car,"[556,250,149,116]","[553,249,162,118]",0.90,occluded_level: 063=2 vs 200=0
+C013,img_026.jpg,iou_thap,063|200,person,person,"[272,535,257,471]","[279,539,205,465]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C014,img_028.jpg,iou_thap,063|200,car,motorcycle,"[605,321,290,137]","[608,334,290,90]",0.64,IoU 0.64 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C015,img_028.jpg,sai_lop,063|200,truck,motorcycle,"[42,297,890,409]","[29,298,901,407]",0.98,"063 gán truck, 200 gán motorcycle cho cùng một vật"
+C016,img_028.jpg,sai_lop,063|200,car,motorcycle,"[605,321,290,137]","[608,334,290,90]",0.64,"063 gán car, 200 gán motorcycle cho cùng một vật"
+C017,img_028.jpg,sai_thuoc_tinh,063|200,car,motorcycle,"[605,321,290,137]","[608,334,290,90]",0.64,occluded_level: 063=0 vs 200=1

@@ -1,0 +1,9 @@
+﻿image,object_id,error_type,reviewer,rule_id,region,note
+img_001.jpg,,khong,063,,,
+img_002.jpg,,khong,063,,,Q01 đã sửa: box truck (#9 vòng 2) ôm hết đuôi rơ-moóc tới x≈922
+img_004.jpg,,khong,063,,,
+img_016.jpg,,khong,063,,,"Q02, Q03 đã sửa: person áo đỏ (#30) occ=0, person trong tuk-tuk (#29) occ=2. Khối nhoè góc trái dưới (sát ống kính) không nhận ra lớp, không gán theo R-19"
+img_017.jpg,,khong,063,,,
+img_026.jpg,,khong,063,,,Q04 đã sửa: người lái (#35) occ=2
+img_028.jpg,,khong,063,,,
+img_033.jpg,,khong,063,,,

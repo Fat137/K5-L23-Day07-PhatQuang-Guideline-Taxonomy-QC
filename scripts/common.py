@@ -423,7 +423,8 @@ def make_ann(tax: Taxonomy, ann_id: int, image_id: int, cls: str, box: Box, attr
 
 
 def read_csv(path: Path) -> List[dict]:
-    with path.open(encoding="utf8", newline="") as f:
+    # utf-8-sig: đọc được cả CSV có BOM (Excel lưu "CSV UTF-8" sẽ thêm BOM, làm hỏng tên cột đầu).
+    with path.open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 

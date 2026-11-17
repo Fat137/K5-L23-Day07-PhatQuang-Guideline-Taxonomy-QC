@@ -1,0 +1,114 @@
+{
+  "intended_use": "Thực hành đặc tả và QC nhãn 2D trong Day 07.",
+  "limitations": "Tập ảnh tuyển chọn để luyện ca biên; độ đại diện cho dữ liệu vận hành chưa được đánh giá.",
+  "format": "COCO 1.0 bbox góc trên trái [x, y, w, h] theo pixel",
+  "taxonomy_version": "v1.0",
+  "taxonomy": "submission\\taxonomy.json",
+  "guideline": "submission\\guidelines\\guideline_v1.1_calibrated.md",
+  "labels": {
+    "path": "submission\\qc\\labels_calibrated.json",
+    "sha256": "42a87315d57cd7d05a1a675e8d8cf0fa99b4d6d59d5ce37175a6fc658077f35a"
+  },
+  "inputs_sha256": {
+    "submission\\qc\\assignment.csv": "e033df7cbe06b19e994cd0f8ea03d9dac4cc7d932b485d202d5a4ca377f949e6",
+    "submission\\qc\\iaa_summary.json": "10bfed2e9be6ef4eb9499edb2a326938b5739ef347ffee3d5b859ea236ea5458",
+    "submission\\qc\\calibration_decisions.csv": "433e4424b9a02b1b0ad6f9e27ca1d75e201e369ee3109f3959a155a2bc206fa5",
+    "submission\\qc\\calibration_context.json": "f429d794c7fc647edd5c24be64cab24629bdbc36ff4cd31b4c82cd1bb6d340c9",
+    "submission\\guidelines\\guideline_v1.1_calibrated.md": "bce3ec7e0712ab4b31fd623f5c1359e500454d4c6daa69191a20d113dcea9cd1",
+    "submission\\guideline_change.json": "87b6cb6b2e2350f439bf96369f2941a39429d285a158d84ee2803e318e9be75d",
+    "submission\\taxonomy.json": "d6bc6141c18e0f3a5c3e4041356d3c622adbc50bec379e7bc273952a3be8d949",
+    "data\\ATTRIBUTION.csv": "c31a270de08f6e2862b84df18a4a05e66dc58526086ec61b258b44cda52b7b2c",
+    "submission\\qc\\labels_calibrated_a7881725ea0b3d95.json": "4d45f352ffd5cb32f8d30e511985dbcaa064854ad5e56ba42dc8c3a2c9c955f0"
+  },
+  "csv_sha256": "1fd1003d18b2be8ec6936f1126005bf0dfea0debf8e2029503e624d2eeab56cd",
+  "images": [
+    {
+      "file": "img_001.jpg",
+      "sha256": "74b15d37b53d99d6cb8b3f7648d064ff89fedf0662df5ca1594c2c9c8454ba88",
+      "source": {
+        "file": "img_001.jpg",
+        "original_title": "DFC 3741 A busy street-side eatery at dusk patrons sit under string lights chatting and enjoying drinks while a tattooed woman in a black dress stands beside a weathered pickup truck parked in front.jpg",
+        "author": "PattayaPatrol",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:DFC_3741_A_busy_street-side_eatery_at_dusk_patrons_sit_under_string_lights_chatting_and_enjoying_drinks_while_a_tattooed_woman_in_a_black_dress_stands_beside_a_weathered_pickup_truck_parked_in_front.jpg"
+      }
+    },
+    {
+      "file": "img_002.jpg",
+      "sha256": "7cfa98eb24c504aa15496a82a714e28cc318447d77d0cb3881f91d649374d3de",
+      "source": {
+        "file": "img_002.jpg",
+        "original_title": "Renault 380 car carrier (17688579282).jpg",
+        "author": "Bob Adams from Amanzimtoti, South Africa",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Renault_380_car_carrier_(17688579282).jpg"
+      }
+    },
+    {
+      "file": "img_004.jpg",
+      "sha256": "dcda047904cbf2cedbe55ce1e179c94e7630cc6bef7fbec597df1472ce2889b7",
+      "source": {
+        "file": "img_004.jpg",
+        "original_title": "DFC 2465 Two brightly painted blue tuk-tuks parked side by side on a city sidewalk at night ready to ferry passengers.jpg",
+        "author": "PattayaPatrol",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:DFC_2465_Two_brightly_painted_blue_tuk-tuks_parked_side_by_side_on_a_city_sidewalk_at_night_ready_to_ferry_passengers.jpg"
+      }
+    },
+    {
+      "file": "img_016.jpg",
+      "sha256": "270e18faba9576023e5217827726b453c34cf9940303aa6bed8af255fff327d0",
+      "source": {
+        "file": "img_016.jpg",
+        "original_title": "BKK CT026.jpg",
+        "author": "Benutzer:Da",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:BKK_CT026.jpg"
+      }
+    },
+    {
+      "file": "img_017.jpg",
+      "sha256": "7b2720ef410aca132b0c78bc1ac9c4f44d3667801f0f38ce47de8626121e0aee",
+      "source": {
+        "file": "img_017.jpg",
+        "original_title": "Duke of Wellington statue, Glasgow - traffic cone hat and gull, 2025.jpg",
+        "author": "Zeete",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Duke_of_Wellington_statue,_Glasgow_-_traffic_cone_hat_and_gull,_2025.jpg"
+      }
+    },
+    {
+      "file": "img_026.jpg",
+      "sha256": "1dcec1a169e2a679a778b8e3ccff6536f0568fcdf0735492c0ded2c28dffb939",
+      "source": {
+        "file": "img_026.jpg",
+        "original_title": "Couple on a motorbike, in a tunnel in Saigon.jpg",
+        "author": "Syced",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Couple_on_a_motorbike,_in_a_tunnel_in_Saigon.jpg"
+      }
+    },
+    {
+      "file": "img_028.jpg",
+      "sha256": "55ba80c2744eb867756de7aecb67ee1b82c19c10b714c2b7291ea8fef15b2fda",
+      "source": {
+        "file": "img_028.jpg",
+        "original_title": "Hard Times Cafe pickup truck with yorse parked along King Street.jpg",
+        "author": "Ser Amantio di Nicolao",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hard_Times_Cafe_pickup_truck_with_yorse_parked_along_King_Street.jpg"
+      }
+    },
+    {
+      "file": "img_033.jpg",
+      "sha256": "1734c4840ff48001ff8812d7960ad95d5d594bbcbf953d8e5a88ff1c5dbc0a48",
+      "source": {
+        "file": "img_033.jpg",
+        "original_title": "Glasgow. Buchanan Street. 'Mannequin'.jpg",
+        "author": "Daniel Naczk",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Glasgow._Buchanan_Street._%27Mannequin%27.jpg"
+      }
+    }
+  ]
+}

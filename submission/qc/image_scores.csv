@@ -1,0 +1,9 @@
+image,n_annotators,n_issues,score,needs_calibration
+img_001.jpg,2,6,6,yes
+img_002.jpg,2,6,6,yes
+img_028.jpg,2,4,6,yes
+img_026.jpg,2,1,1,yes
+img_004.jpg,2,0,0,no
+img_016.jpg,2,0,0,no
+img_017.jpg,2,0,0,no
+img_033.jpg,2,0,0,no
