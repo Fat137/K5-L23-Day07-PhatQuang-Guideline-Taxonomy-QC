@@ -1,0 +1,6 @@
+# Giữ nguyên từng byte (không đổi CRLF/LF) cho các file bị khoá SHA-256 trong
+# iaa_summary.json, batch_manifest.json và các vòng QC; nếu git đổi xuống dòng
+# khi clone thì mã băm lệch và script báo "đầu vào đã thay đổi".
+submission/** -text
+cvat/** -text
+data/ATTRIBUTION.csv -text
