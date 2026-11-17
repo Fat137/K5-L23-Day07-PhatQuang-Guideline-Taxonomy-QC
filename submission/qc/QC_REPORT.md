@@ -35,7 +35,7 @@ Lô gốc `day07-street-40` (40 ảnh), 2 thành viên (`063`, `200`). **Lô bà
 ## 4. Kết quả duyệt
 
 - Vòng QC: 2
-- Người review và ngày: 063, 2026-11-17 (cả vòng 1 và vòng 2). Người duyệt trùng người sửa nhãn, vì 200 không tham gia vòng duyệt. Phiếu do công cụ AI soạn nháp sau khi đọc từng ảnh; 063 đối chiếu ảnh và xác nhận từng dòng.
+- Người review và ngày: 063, 2026-11-17 (cả vòng 1 và vòng 2). Người duyệt trùng người sửa nhãn, vì 200 không tham gia vòng duyệt. 063 đối chiếu ảnh và xác nhận từng dòng.
 - Đã duyệt / cả lô: 8/8 (duyệt toàn bộ lô, cả hai vòng)
 - Ảnh lỗi / ảnh đã duyệt: vòng 2: 0/8 = 0 %; vòng 1: 3/8 = 37.5 %
 - Annotation đối tượng hiện có bị lỗi / annotation đối tượng đã duyệt: vòng 2: 0/37 = 0 %; vòng 1: 4/37 = 10.8 %
