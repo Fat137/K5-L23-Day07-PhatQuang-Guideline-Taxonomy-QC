@@ -64,4 +64,10 @@ Không sửa ngưỡng (`rules` trong `taxonomy.json` giữ nguyên bản đề)
 
 Script kiểm được: tên file theo mã, lớp và thuộc tính đúng taxonomy, box nằm trong ảnh, box cao < 20 px, đủ lượt gán, độ lệch giữa hai người (IoU, lớp, thuộc tính, bỏ sót / thừa). Script **không** kiểm được: box có ôm sát vật không (box truck hụt đuôi ở `img_002` vẫn qua script); vật có thật không (tượng, phản chiếu); lớp có đúng thực tế không (pickup gán `van` vẫn qua script); vật cả hai người cùng bỏ sót; hai người cùng hiểu sai một quy tắc. Những phần này do người review đọc ảnh, đối chiếu R-xx.
 
+**Tái lập trên máy khác.**
+- Các file bị khoá SHA-256 (`iaa_summary.json`, `batch_manifest.json`, `reviews/round-*`) được sinh trên Windows. Lúc đầu git tự đổi xuống dòng CRLF ↔ LF khi commit / clone, làm lệch mã băm: một bản clone mới báo "Đầu vào IAA đã thay đổi".
+  - Đã sửa bằng `.gitattributes` (`submission/**`, `cvat/**`, `data/ATTRIBUTION.csv` giữ nguyên byte).
+  - Đã kiểm: clone mới với `core.autocrlf=true` và `=false` đều chạy `check_submission.py --round 2` khớp mã băm.
+- **Giới hạn còn lại:** script lưu đường dẫn trong manifest bằng dấu `\` của Windows (ví dụ `submission\taxonomy.json`), nên chạy lại trên Linux / macOS sẽ không tìm thấy file. Nên mở và chạy lại bài trên Windows. Sửa tận gốc (đổi `rel()` sang `as_posix()`) đòi hỏi sinh lại toàn bộ chuỗi IAA → calibration → QC, nên nhóm chưa làm.
+
 Ngoài ra, nhóm tự viết thêm một bước kiểm không có trong script: so khít toạ độ box giữa hai file nhãn, để phát hiện box nạp lại từ file thay vì vẽ độc lập. Bước này quyết định phạm vi lô 8 ảnh ở mục 2.
